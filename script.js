@@ -7,7 +7,7 @@ const fourteen = document.querySelector('.fourteen')
 
 //click event listener for Generate Password button div
 function genpass () {
-  
+    //this is where we take in random alphanumeric character set
     const aa = Math.random().toString(36).slice(3)
     const ab = Math.random().toString(36).slice(3)
     const ac = Math.random().toString(36).slice(3)
@@ -25,7 +25,7 @@ function genpass () {
     const ac2 = ac.charAt(8) + ac.charAt(6);
     const ad2 = ad.charAt(4) + ad.charAt(8);
 
-    //special characters (random)
+    //special characters (random) - this is where we take special character sets
     const sc = "!@E!H#$J%^js&*ti@$ao%^y*";
     const sd = "&$*#5*!@*#^%3!*^#%&#@*";
     const se = "**&^%$#@!";
@@ -120,6 +120,7 @@ function genpass () {
         }        
         copyPass.addEventListener('click', copy)
     }
+    //set color blink for generate password button div
     genPass.style.backgroundColor = 'rgb(6 182 212)'
     genPass.style.fontWeight = '700'
     genPass.style.color = 'rgb(30 64 175)'

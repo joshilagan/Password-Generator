@@ -1,0 +1,12 @@
+@media (min-width:520px) {
+    .button-div{
+        margin: 0 20px 0 20px;
+        font-size: 20px;
+    }
+}
+@media (min-width:570px) and (max-width:638px){
+    .button-div{
+        margin: 0 60px 0 60px;
+       
+    }
+}
